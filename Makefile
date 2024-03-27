@@ -27,7 +27,11 @@ $(warning project is tested with GCC. your mileage may vary.)
 endif
 endif
 
-CXXFLAGS=-Wall -g --std=c++23
+CXXFLAGS=-Wall -g -std=c++23
+
+ifeq ($(uname_S),Darwin)
+CXXFLAGS += -Wl,-ld_classic
+endif
 
 # testing target
 TESTTARGET=$(PROJECT)test.out
