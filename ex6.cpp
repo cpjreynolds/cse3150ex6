@@ -101,7 +101,7 @@ vector<pair<dvec2, dvec2>> theta_sort(const vector<dvec2>& vecs)
 }
 
 #ifndef TESTING
-constexpr std::string DEFAULT_FNAME = "test.txt";
+const std::string DEFAULT_FNAME = "test.txt";
 
 int main(int argc, char** argv)
 {
